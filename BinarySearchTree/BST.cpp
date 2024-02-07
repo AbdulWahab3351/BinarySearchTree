@@ -115,7 +115,7 @@ void BST<T>:: removeElem(T key)
 				if (prev->left == ptr)
 					prev->left = ptr->left;
 				else
-					prev->right = ptr->right;
+					prev->right = ptr->left;
 				delete ptr;
 			}
 			else if (!ptr->left && ptr->right)
